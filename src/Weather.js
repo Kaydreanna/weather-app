@@ -45,11 +45,11 @@ export default function Weather() {
                   <div id="degrees">
                     <strong className="temperature" id="temp"></strong>
                     <span className="unit">
-                      <a href="#" id="celsius" className="active">
+                      <a href="/" id="celsius" className="active">
                         °C
                       </a>
                       |
-                      <a href="#" id="fahrenheit">
+                      <a href="/" id="fahrenheit">
                         °F
                       </a>
                     </span>
