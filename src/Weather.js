@@ -66,6 +66,9 @@ export default function Weather() {
               </div>
             </div>
           </div>
+          <footer>
+            <a href="https://github.com/Kaydreanna/weather-app">Github</a>
+          </footer>
         </div>
       </div>
     </div>
