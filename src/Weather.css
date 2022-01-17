@@ -6,3 +6,40 @@
   border: 1px solid black;
   border-radius: 5px;
 }
+.search-here {
+    text-align: center;
+}
+#search-bar {
+  width: 250px;
+  position: absolute;
+  background-color: white;
+  margin: auto auto auto 20px;
+}
+#search-button {
+  padding: 10px 30px;
+  border-radius: 15px;
+  margin: auto auto auto 200px;
+}
+.temp {
+  color: purple;
+}
+.low-temp {
+  color: purple;
+  opacity: 70%;
+}
+li {
+  list-style-type: none;
+  color: rgb(135, 135, 135);
+  font-size: 20px;
+}
+#here {
+  margin: 15px auto 15px 30px;
+}
+#temp {
+  display: block;
+  text-align: center;
+}
+.WeatherTemperature {
+  font-size: 40px;
+  margin: 15px auto 25px auto;
+}
