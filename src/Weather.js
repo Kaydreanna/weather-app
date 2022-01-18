@@ -23,7 +23,7 @@ export default function Weather(props) {
   }
 
   function handleSubmit(event) {
-    event.preventDefualt();
+    event.preventDefault();
     search();
   }
 
@@ -41,29 +41,29 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <div className="search-here">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="search"
-            id="search-bar"
-            placeholder="Search..."
-            className="form-control"
-            autoFocus="on"
-            onChange={handleCityChange}
-          />
-          <input
-            type="submit"
-            id="search-button"
-            value="Search"
-            className="btn btn-primary w-40"
-          />
-        </form>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="search"
+              id="search-bar"
+              placeholder="Search..."
+              className="form-control"
+              autoFocus="on"
+              onChange={handleCityChange}
+            />
+            <input
+              type="submit"
+              id="search-button"
+              value="Search"
+              className="btn btn-primary w-40"
+            />
+          </form>
         </div>
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
-      search();
-      return "Loading..."
+    search();
+    return "Loading...";
   }
 }
